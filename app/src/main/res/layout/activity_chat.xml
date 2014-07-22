@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="net.magmastone.cryptosms.chatActivity">
+
+    <ListView android:id="@+id/chatListView"
+
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#eee"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:maxLength="60"
+            android:hint="New message..."
+            android:layout_gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageEdit" />
+        <Button
+            android:id="@+id/NewSend"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_fa_send"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
